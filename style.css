@@ -244,7 +244,6 @@ body.darkmode {
 
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
-    background-color: var(--modal-color);
 }
 
 .change .bar2 {
@@ -253,7 +252,6 @@ body.darkmode {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-    background-color: var(--modal-color);
 }
 
 .main-content {
