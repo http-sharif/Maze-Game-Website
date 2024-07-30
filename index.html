@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="small-screen-container"><p class="small-screen">This game is designed to be played on laptop and PC.</p></div>
+    <div class="menu-button" id="menu-button">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="slider" id="slider">
+        <div id="darkmode">
+            <div class="dark-mode-specifier" id="dark-mode-specifier"></div>
+            <h3>Dark Mode</h3>
+        </div>
+        <fieldset class="range-slider" id="range-slider">
+            <legend style="font-size: 1.5em; font-weight: bold;">Maze Size</legend>
+            <input type="range" min="21" max="41" value="21" step="2" class="maze-size" id="maze-size">
+            <div class="size-output">
+                <div id="size-output">Maze size: 20</div>
+                <div class="tooltip">&#9432<div class="tooltiptext">The maze size need to be an odd number.</div>
+                </div>
+            </div>
+
+        </fieldset>
+        <fieldset class="time-slider" id="time-slider">
+            <legend style="font-size: 1.5em; font-weight: bold;">Timer</legend>
+            <input type="range" min="0" max="120" value="60" step="30" class="time-value" id="time-value">
+            <div class="time-output" id="time-output">Time: 60 seconds</div>
+        </fieldset>
+        <fieldset class="shortcut">
+            <legend style="font-size: 1.5em; font-weight: bold;">Shortcuts</legend>
+            <ul>
+                <li>Use <em>WASD</em> or <em>Arrow Key</em> to move the box.</li>
+                <li>Press <em>F</em> to cut the vines.</li>
+                <li>Press <em>L</em> to break the wall.</li>
+                <li>Press <em>R</em> to restart</li>
+                <li>Press <em>N</em> to change maze</li>
+            </ul>
+        </fieldset>
+    </div>
+    <div class="description">
+        <h1>Welcome to the Maze Game</h1>
+        <p>Navigate through the maze and find your way out.</p>
+    </div>
+    <div class="modal" id="modal" onclick="playAgain()">
+        <div class="popup" id="popup">
+            <h1 id="result"></h1>
+            <p id="message"></p>
+            <div id="playagain" class="button" onclick="playAgain()">Play Again</div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="data-container">
+            <div class="moves-container">Moves: <span id="moves-counter">0</span> times</div>
+            <div class="timer-container">Time Left: <span id="timer">60</span> sec</div>
+        </div>
+        <div class="maze" id="maze"></div>
+        <div class="button-container">
+            <div id="restart" class="button" onclick="restart()">Restart</div>
+            <div id="playagain" class="button" onclick="playAgain()">Next Maze</div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
