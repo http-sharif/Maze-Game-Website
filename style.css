@@ -41,6 +41,7 @@ body.darkmode {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
+    color: var(--complementary);
 }
 
 .description h1 {
@@ -504,6 +505,5 @@ body.darkmode {
     }
     .small-screen-container{
         display: flex;
-        color: var(--complementary);
     }
 }
