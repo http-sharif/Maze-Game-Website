@@ -504,5 +504,6 @@ body.darkmode {
     }
     .small-screen-container{
         display: flex;
+        color: var(--complementary);
     }
 }
