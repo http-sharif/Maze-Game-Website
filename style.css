@@ -100,6 +100,7 @@ body.darkmode {
     flex-direction: column;
     border: 5px solid var(--complementary);
     border-radius: 25px;
+    margin-bottom: 20px;
 }
 
 .shortcut h2 {
