@@ -82,9 +82,6 @@ body.darkmode {
     align-items: center;
     backdrop-filter: blur(4px);
     color: var(--complementary);
-}
-
-.menu-button:hover~.slider {
     overflow-y: auto;
 }
 
