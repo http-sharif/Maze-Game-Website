@@ -12,7 +12,7 @@ Welcome to the Maze Game! Navigate through the maze, avoid obstacles, and find y
 
 ## Demo
 
-[Maze Game Demo](https://sharif-islam96403.github.io/Maze-Game-Website/)
+[Maze Game Demo](https://http-sharif.github.io/Maze-Game-Website/)
 
 ## Preview
 <img width="1000" alt="Screenshot 2024-08-04 at 1 43 22 AM" src="https://github.com/user-attachments/assets/5b055b81-48f7-4f47-898c-25544dc04c37">
@@ -25,7 +25,7 @@ To set up the Maze Game on your local machine, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/maze-game.git
+    git clone https://github.com/http-sharif/maze-game.git
     ```
 
 2. **Navigate to the project directory**:
